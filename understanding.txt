@@ -1,5 +1,5 @@
-1. The main purpose of the TicTacToe class is to manage the state and rules of the game.
-2. The makeMove function updates the board and switches players.
-3. The checkWinner function determines if the game has a winner.
-4. The board is stored in a 2D array of characters representing X,O, or empty.
-5. The main.cpp file runs the game by repeatedly making moves until the game is over.
+getCell(row, col) with invalid coordinates: Returns ' ' (space) to indicate invalid cell.
+getWinner() when there's no winner yet: Returns ' ' (space).
+Why getWinner() is const but makeMove() is not: getWinner() only checks game state (no changes). makeMove() modifies the board, current player, and move count.
+Board full and nobody has won: isGameOver() should return true (tie condition).
+getCurrentPlayer() at the start of a new game: 'X'.
