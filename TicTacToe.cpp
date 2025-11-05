@@ -63,6 +63,9 @@ void test_winner_detection_column() {
     std::cout << " Winner detection (column) test passed\n";
 }
 
+viod test_winner_detection_diagonal() {
+std::cout << "[diag test placeholder]\n";
+
 void test_full_board_no_winner() {
     TicTacToe game;
     playMoves(game, {
@@ -89,3 +92,4 @@ int main() {
     return 0;
 }
         
+
